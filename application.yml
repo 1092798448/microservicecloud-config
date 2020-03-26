@@ -6,11 +6,11 @@ spring:
 ---
 spring: 
   profiles: dev
-    application: 
-      name: microservicecloud-config-abchina-dev
+  application: 
+    name: microservicecloud-config-abchina-dev
 
 ---
 spring:
   profiles: test 
-    application: 
-      name: microservicecloud-config-abchina-test
+  application: 
+    name: microservicecloud-config-abchina-test
