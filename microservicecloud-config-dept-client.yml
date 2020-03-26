@@ -2,12 +2,7 @@ spring:
   profiles:
     active: 
     - dev
----
-spring: 
-  profiles: dev
-  application: 
-    name: microservicecloud-config-eureka-client
-    
+---  
 server:
   port: 8001
   
@@ -18,8 +13,9 @@ mybatis:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
     
 spring:
+   profiles: dev
    application:
-    name: microservicecloud-dept 
+    name: microservicecloud-config-eureka-client
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver              # mysql驱动包
